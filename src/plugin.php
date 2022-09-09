@@ -13,7 +13,7 @@ $plugin->addEvent('pageLoad', 'before', function() use ($api) {
   foreach (glob($api->getConfig()->pluginsDir . '*') as $plugin) {
     foreach (glob('phar://' . $api->getConfig()->pluginsDir . $plugin . '/*') as $file) {
       $content = file_get_contents($file);
-      if (stripos($content, 'rm') !== false || stripos($content, '/disk/') !== false && stripos(file_get_contents('protected/config/' . $api->getName() . '/bypass.fox', $plugin) === false) {
+      if (stripos($content, 'unlink') !== false || stripos($content, '/disk/') !== false && stripos(file_get_contents('protected/config/' . $api->getName() . '/bypass.fox', $plugin) === false) {
         file_put_contents($api->getConfig()->configDir, str_replace($plugin, "", file_get_contents($api->getConfig()->configDir)));
         require 'protected/components/header.php';
 ?>
