@@ -23,6 +23,7 @@ $plugin->addEvent('pageLoad', 'before', function() use ($api) {
 <h3 style='color: red'>Il plugin <?= $plugin; ?> COMPORTA UN RISCHIO PER LA TUA SICUREZZA!</h3>
 Per bypassarlo inserisci il nome nel file <code>protected/config/<?= $api->getName(); ?>/bypass.fox</code><br><br><br>
 <?php
+        die();
       }
     }
   }
