@@ -1,0 +1,15 @@
+{
+   "author":"FoxWorn3365",
+   "contributors":"FoxWorn3365",
+   "name":"ShareLinks",
+   "project_namespace":"FoxWorn3365.FoxCloudPlugins.CodeChecker",
+   "description":"Questo plugin controlla gli altri plugin per evitare che portino contenuti dannosi per il Cloud",
+   "version":"ALPHA 0.3",
+   "phpVersion":"7.3",
+   "compatibility":{
+      "cloudVersions":[
+         "1.7"
+      ],
+   },
+   "type":"phar_plugin"
+}
